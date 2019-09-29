@@ -6,15 +6,16 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "monk": "~6.0.6",
     "mongodb": "~3.3.2",
-    "stylus": "~0.54.7",
-    "nib": "~1.1.2"
+    "monk": "~6.0.6",
+    "morgan": "~1.9.1",
+    "nib": "~1.1.2",
+    "stylus": "~0.54.7"
   }
 }

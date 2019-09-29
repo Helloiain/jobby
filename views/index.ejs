@@ -2,11 +2,28 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/stylesheets/style.styl' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/style.styl" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header>
+      <div class="container">
+        <h1><%= title %></h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <% jobs.forEach((job, index) => { %>
+      <p><%= job.title %></p>
+      <p><%= job.summary %></p>
+      <a href="<%= job.url %>" target="__blank"><%= job.url %></a>
+      <% }) %>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p><%=title%> | Built with ❤️ by Ian Parkinson</p>
+      </div>
+    </footer>
   </body>
 </html>
