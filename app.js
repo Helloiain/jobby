@@ -31,6 +31,7 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use("/.netlify/functions/server", router); // path must route to lambda
 app.use(express.static(path.join(__dirname, "assets")));
 
 app.use("/", indexRouter);
